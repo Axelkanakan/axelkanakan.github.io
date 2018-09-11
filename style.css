@@ -1,0 +1,295 @@
+html {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto";
+}
+.container{
+    width:400px;
+    height: 287px;
+    margin-top: 135px;
+    margin-left: 25%;
+}
+
+.name{
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    color:#E01171;
+    letter-spacing: .84px;
+    margin: 0px;
+    margin-bottom: 18px; 
+    margin-left: 5px;
+    
+
+}
+
+.role{
+    font-size: 80px;
+    color: #19116B;
+    font-weight:900;
+    line-height: 74px;
+    margin:0px; 
+    padding: 0px;
+    margin-bottom: 53px;
+
+}
+.navigation{
+    width: 400px;
+    height: 44px;
+}
+
+.navigation button{
+    background: linear-gradient(to left, #E01171 50%, #FBB901 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    border:none;
+    width: 165px;
+    height: 44px;
+    border-radius: 22px;
+    font-size:20px;
+    color:rgba(255, 255, 255, 0.75);
+    font-weight: 500;
+    transition: all 600ms cubic-bezier(0.19, 1, 0.22, 1);
+    padding-top:8px; 
+    cursor: pointer;
+
+
+}
+
+.navigation button:focus{
+    outline: none;
+}
+
+.navigation button a{
+    text-decoration: none;
+    color:rgba(255, 255, 255, 0.75);
+}
+
+.navigation ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    float: right;
+    height: 35px;
+    width: 187px;
+    margin-top: 3px;
+
+}
+
+.navigation li {
+    float: left;
+    width: 35px;
+    height: 35px;
+    background: #19116B;
+    border-radius:50%;
+    margin-right:17px; 
+    transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.navigation li:first-child{
+    margin-right:13px;
+}
+
+.navigation li:last-child{
+    margin-right: 0px;
+}
+
+.navigation li a{
+    text-decoration: none;
+    color:white;
+    text-align: center;
+}
+
+.navigation li:hover{
+    background: #E01171;
+    transform: scale(1.1);
+    box-shadow:-1px 4px 5px -2px rgba(25,17,107,0.35);
+}
+
+.in{
+    fill:white;
+    margin-top:8px;
+    margin-left:9.2px;
+}
+
+.dribbble{
+    fill:white;
+    margin-top:6px;
+    margin-left: 6.5px; 
+}
+
+.github{
+    fill:white;
+    margin-top:4.77px;
+    margin-left: 5.57px;
+}
+
+.resume{
+    fill:white;
+    margin-top: 7.16px;
+    margin-left: 10.34px;
+}
+
+
+.sayHi{
+    position: relative;
+    bottom:40px;
+}
+
+.hi{
+    position: relative;
+    transition:all 60ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+
+.sayHi #S{
+    position: relative;
+    left: 8px;
+    color: white;
+    transition: all .1s ease-in;
+    top:0px;
+    opacity: 0;
+}   
+
+
+.sayHi #a{
+    position: relative;
+    left: 4px;
+    color: white;
+    opacity: 0;
+    top:0px;
+    transition: all .2s ease-in ;
+
+}
+
+.sayHi #y{
+    position: relative;
+    left: .1px;
+    color: white;
+    opacity: 0;
+    top:0px;
+    transition: all .3s ease-in ;
+}
+
+.sayHi #h{
+    position: relative;
+    color:white;
+    opacity: 0;
+    top:0px;
+    transition: all .4s ease-in ;
+
+}
+
+.sayHi #i{
+    position: relative;
+    right: 4px;
+    color:white;
+    opacity: 0;
+    top:0px;
+    transition: all .5s ease-in ;
+
+}
+
+.sayHi #ex{
+    position: relative;
+    right: 8px;
+    color: white;
+    opacity: 0;
+    top:0px;
+    transition: all .6s ease-in;
+}
+
+
+
+@keyframes buttonClick {
+    0% {
+        transform: scale(.98);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+/* 
+@media only screen and (max-width: 650px){
+    .container{
+        margin-left: 10%;
+    }
+} */
+
+
+@media only screen and (max-width: 375px) {
+    .container{
+        margin: 100px auto;
+        margin-top:120px;
+        width: 319px;
+        height: 230px;
+
+    } 
+
+    .name{
+        font-size: 14.4px;
+    }
+
+    .role{
+        font-size: 64px;
+        line-height: 59.2px;
+        margin-bottom: 34px;
+    }
+
+
+
+    .navigation{
+        width: 317px;
+    }
+
+    .navigation button{
+        width:132px;
+        height:35.2px;
+        font-size: 16px;
+    }
+    .navigation ul{
+        width: 173px;
+    }
+
+    .navigation li{
+        width: 33.6px;
+        height: 33.6px;
+        margin-right:13px;
+    }
+
+    .navigation li:first-child{
+        margin-right:10px;
+    }
+    
+    .navigation li:last-child{
+        margin-right: 0px;
+    }
+
+
+    .in{
+        margin-left: 9.2px;
+        height: 16px;
+        width: 16px;
+    }
+
+    .dribbble{
+        width: 21px;
+        height: 21px;
+        margin-left: 7px;
+    }
+
+    .github{
+        width: 23px;
+        height: 23px;
+        margin-left: 6px;
+        margin-top: 5.5px;
+    }
+
+    .resume{
+        width:14.32px;
+        height: 19.09px;
+        margin-left:10px;
+
+    }
+}
